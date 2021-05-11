@@ -4,7 +4,412 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../album-page/album.css" />
+    <link rel="stylesheet" href="artist.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <title>Artist page</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="container-fluid" style="position: relative">
+        <div class="row">
+          <div class="col-2" id="login">
+            <div>
+              <img
+                src="https://s22.q4cdn.com/540910603/files/design/Spotify_Logo_White.png"
+                alt=""
+                width="150px"
+              />
+            </div>
+            <div id="firstOptions">
+              <div class="login-componenet" id="home">
+                <i class="fas fa-home"></i>
+                <a href="../Home-page/home.html">Home</a>
+              </div>
+              <div class="login-componenet" id="search">
+                <i class="fas fa-search"></i>Search
+              </div>
+              <div class="login-componenet" id="library">
+                <i class="fas fa-grip-lines-vertical"></i>Your library
+              </div>
+            </div>
+            <div class="login-componenet" id="install">
+              <i class="fas fa-arrow-circle-down"></i>Install your app
+              <hr />
+            </div>
+            <div class="login-componenet d-flex" id="user">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C5603AQEmKU0TgsZoSA/profile-displayphoto-shrink_800_800/0/1517742555887?e=1626307200&v=beta&t=bv_1VSDzF5AP_7_U1e2UmeD30KbK_2lJRu2Laa01Z5w"
+                alt="userImage"
+                width="30px;"
+                height="30px"
+                style="border-radius: 50%"
+              />
+              <div id="user-name">Diego 'Ziba' Banovaz</div>
+            </div>
+          </div>
+          <div class="col-10">
+            <img src="/wp2202399.png" width="100%" height="400px" alt="queen" />
+
+            <div class="row d-flex">
+              <div
+                class="
+                  col
+                  d-flex
+                  flex-column
+                  justify-content-center
+                  align-items-center
+                "
+                id="col"
+              >
+                <div><small>123,023,423 MONTHLY LISTENERS</small></div>
+                <div><h1>Queen</h1></div>
+                <div class="buttons d-flex">
+                  <div class="playbutton mr-4">Play</div>
+                  <div class="folowbutton mr-4">Follow</div>
+                  <div class="morebutton mr-4">
+                    <div class="dropdown" id="dropdown-top">
+                      <button
+                        class="btn text-white dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton"
+                        aria-haspopup="true"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        ...
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <li>
+                          <a class="dropdown-item text-white" href="#"
+                            >Action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item text-white" href="#"
+                            >Another action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item text-white" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="littleNAV">
+                  <ul>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Related artists</a></li>
+                    <li><a href="#">About</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex" id="secondSection">
+              <div class="col">
+                <div class="container-fluid">
+                  <h3 class="text-white" style="margin-top: 100px">
+                    <a class="genreTitles ml-5" href="#">ALBUMS</a>
+                  </h3>
+                  <div class="card-deck pt-3">
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b27328581cfe196c266c132a9d62"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pb-0 pt-2 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">
+                          Bohemian Rhapsody (The Original Soundtrack)
+                        </h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b273a97714ae03be2b2ff2aa2dbb"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">On Air</h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b27382ae0f628e5a39196ac9083b"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">A Night At The Odeon</h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b27317b3c4b46719258b5091cc5f"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">Live at the Rainbow</h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <a href="./Album-page.html"
+                        ><img
+                          src="https://i.scdn.co/image/ab67616d0000b2734028a9a4a9b6b6059994e4f6"
+                          class="card-img-top img-fluid"
+                          alt="Picture"
+                      /></a>
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">
+                          Live At The Rainbow (Deluxe)
+                        </h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b2731092d27726b965d04ef427e0"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">
+                          Hungarian Rhapsody (Live In Budapest / 1986)
+                        </h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-deck pt-3">
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b27355285c618061fbdce72c2579"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">We Believe</h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b2735be5f807f6f0549e198a44b4"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0 pb-1">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">
+                          The Works (2011 Remaster)
+                        </h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b27370f9e1cf71793ee37d5e6730"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">Hot Space</h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b2737dafc1684ef3c22283811454"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">Sheer Heart Attack</h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b27325656a963e552f8e8a46f0b0"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">Queen On Fire</h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                    <div class="card bg-transparent text-center border-0 pb-1">
+                      <img
+                        src="https://i.scdn.co/image/ab67616d0000b27346493b86589030cc39ce1bf2"
+                        class="card-img-top img-fluid"
+                        alt="Picture"
+                      />
+                      <div class="card-body text-white pt-2 pb-0 px-0">
+                        <div class="play-circle">
+                          <div class="tringle-play"></div>
+                        </div>
+                        <h5 class="card-title mb-0">News Of The World</h5>
+                      </div>
+                      <div class="card-footer pt-0 px-0 border-0">
+                        <small class="text-muted">Queen</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- player -->
+    <div class="palyer fixed-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Creating the dive for different parts of the player -->
+          <div class="col-3 left-side mt-4">
+            <!-- This div is for song name and the image with heart icon and fullscreenicon -->
+            <div class="row">
+              <!-- This row is created to make the text and the images aligned -->
+              <div class="col-3 pr-0">
+                <img src="https://picsum.photos/40/40" alt="music name" />
+              </div>
+              <div class="col-6 pl-0">
+                <h6 class="song-name">Bohemian Rhapsody</h6>
+                <p class="artist-name">Queen</p>
+              </div>
+              <div class="col-3">
+                <i class="far fa-heart"></i>
+                <i class="far fa-window-maximize"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <!-- This div is for the media player consisting of the buttons like shuffle 
+                      back forward play and loop with the progress-bar -->
+            <div class="row mb-1">
+              <!-- This row is to create the icons for the media player -->
+              <div class="col text-center align-self-center player-icons">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-play-circle play-button-media"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <!-- This row is for the progress bar of the song -->
+              <div class="col">
+                <div class="progress" style="height: 5px">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 10%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- This div is for playlist icon speaker and the volume icon with the progress bar -->
+            <div class="row mt-4">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-mobile-alt"></i>
+              <i class="fas fa-volume-down"></i>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="50"
+                class="slider"
+                id="myRange"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
