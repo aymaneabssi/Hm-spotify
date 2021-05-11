@@ -1,0 +1,30 @@
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+#horizontal-line {
+  border-right: 1px solid gray;
+}
+.btn,
+.btn:focus {
+  width: 150px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 67px;
+  outline: none;
+  border: none;
+}
+#login-btn {
+  border: 1px solid white;
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+#signup-btn {
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(53, 53, 53);
+  margin-bottom: 10px;
+}
+.btns-Policy {
+  position: absolute;
+  bottom: 80px;
+}
