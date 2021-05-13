@@ -124,6 +124,10 @@ h3 {
   cursor: pointer;
   transform: translateX(-50px);
 }
+h3 a:hover {
+  color: white;
+  text-decoration: none;
+}
 .buttons {
   transform: translateY(60px);
 }
