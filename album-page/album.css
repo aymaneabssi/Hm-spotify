@@ -151,3 +151,11 @@ input[type='range']::-webkit-slider-thumb {
 input[type='range']:hover {
   background: #39913c;
 }
+@media (max-width: 1195px) {
+  #install {
+    bottom: 130px;
+  }
+  .login-componenet {
+    font-size: 12px;
+  }
+}

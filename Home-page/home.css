@@ -227,3 +227,15 @@ h6 a {
 h6 a:hover {
   color: white;
 }
+@media (max-width: 995px) {
+  .btn,
+  .btn:focus {
+    width: 100px;
+  }
+}
+@media (max-width: 705px) {
+  .btn,
+  .btn:focus {
+    width: 90px;
+  }
+}
