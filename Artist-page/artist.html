@@ -225,6 +225,8 @@
           image:
             'https://i.scdn.co/image/ab67616d0000b2731092d27726b965d04ef427e0',
         },
+      ];
+      const secondAlbums = [
         {
           albumName: 'We Believe',
           image:
@@ -256,20 +258,15 @@
             'https://i.scdn.co/image/ab67616d0000b27346493b86589030cc39ce1bf2',
         },
       ];
+
       (() => {
-        for (let i = 0; i < albums.length; i++) {
-          const album = albums[i];
-          console.log(album);
-        }
-      })();
-      (() => {
-        for (let index = 0; index < 5; index++) {
-          document.querySelector(
-            '.albums-row#firstRow'
-          ).innerHTML += `<div class="card bg-transparent text-center border-0 pb-1">
+        const row = document.querySelector('.albums-row#firstRow');
+        for (let index = 0; index < albums.length; index++) {
+          const album = albums[index];
+          row.innerHTML += `<div class="card bg-transparent text-center border-0 pb-1">
                       <a href="../album-page/album.html"
                         ><img
-                          src="https://i.scdn.co/image/ab67616d0000b2734028a9a4a9b6b6059994e4f6"
+                          src="${album.image}"
                           class="card-img-top img-fluid"
                           alt="Picture"
                       /></a>
@@ -278,19 +275,24 @@
                           <div class="tringle-play"></div>
                         </div>
                         <h5 class="card-title mb-0">
-                          Bohemian Rhapsody (The Original Soundtrack)
+                          ${album.albumName}
                         </h5>
                       </div>
                       <div class="card-footer pt-0 px-0 border-0">
                         <small class="text-muted">Queen</small>
                       </div>
                     </div>`;
+        }
+      })();
+      (() => {
+        for (let i = 0; i < secondAlbums.length; i++) {
+          const SecAlbum = secondAlbums[i];
           document.querySelector(
             '.albums-row#secondRow'
           ).innerHTML += `<div class="card bg-transparent text-center border-0 pb-1">
                       <a href="../album-page/album.html"
                         ><img
-                          src="https://i.scdn.co/image/ab67616d0000b2734028a9a4a9b6b6059994e4f6"
+                          src="${SecAlbum.image}"
                           class="card-img-top img-fluid"
                           alt="Picture"
                       /></a>
@@ -299,7 +301,7 @@
                           <div class="tringle-play"></div>
                         </div>
                         <h5 class="card-title mb-0">
-                          Live At The Rainbow (Deluxe)
+                         ${SecAlbum.albumName}
                         </h5>
                       </div>
                       <div class="card-footer pt-0 px-0 border-0">
